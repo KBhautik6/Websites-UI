@@ -19,9 +19,6 @@ body{
     font-family: Nexa;
     overflow-x: hidden;
 }
-/* .section{
-    /* position: relative; */
-/* } */
 .photosection{
     position: relative;
     box-sizing: border-box;
@@ -125,14 +122,9 @@ body{
 .wrapper{
     display: flex;
     justify-content:center;
-    /* width:97%; */
     margin-left: 40px;
     margin-right: 40px;
-    /* align-items: center; */
 }
-/* .margin-top-40{
-    margin-top:23px;
-} */
 .roadmapswiper{
     max-width: 220px;
     width: 100%;
@@ -163,7 +155,6 @@ body{
     position: absolute;
     width: 109%;
     height: 20px;
-    /* border: 1px solid black; */
     background-color: blue;
     top: -8px;
     margin: 0 auto;
@@ -177,41 +168,7 @@ body{
     border-radius: 25px;
     margin: 0 auto;
 }
-/* .line-dot {
-    display: flex;
-    align-items: center;
-}
 
-.line-dot::before,
-.line-dot::after {
-    content: "";
-    flex: 1;
-    margin: 0 5px;
-}
-
-.dot {
-    margin-top:50px;
-    width: 30px;
-    height: 30px;
-    z-index: 1;
-    background-color: #fff;
-    border: 1px solid black;
-    border-radius: 50%;
-} */
-
-
-/* .date::after{
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    background-color: #fff;
-    border-radius: 25px;
-    top: -35px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-} */
 .status{
     background: #191c26;
     border-radius: 14px;
@@ -236,7 +193,6 @@ body{
     top: -35px;
     left: 0;
     right: 0;
-    /* margin: 0 140px; */
 }
 .roadmapdescription{
     font-size:18px;
@@ -345,7 +301,6 @@ body{
         background: #20e6f2;
         padding: 8px 10px 6px;
         margin: 0 0 15px;
-        /* box-shadow: inset 0 2px 2px #0000008a; */
         border-radius: 30px;
         text-align: center;
         font-family: NexaBold;

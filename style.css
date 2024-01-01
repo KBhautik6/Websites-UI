@@ -27,7 +27,7 @@ body{
 .maindiv{
     padding: 0px 15px;
 }
-.escrowdiv{
+.escrowDiv{
     max-width: 1170px;
     margin: 0 auto;
 }
@@ -35,13 +35,13 @@ body{
     width: 100%;
     display: flex;
 }
-.leftdiv{
+.leftDiv{
     text-align: left;
     width: 50px;
     margin-right:200px;
     margin-left: 50px;
 }
-.imagecontent{
+.image-content{
     max-width: 400px;
     width: 100%
 }
@@ -49,7 +49,7 @@ body{
     max-width: 400px;
     width: 100%;
 }
-.rightdiv{
+.right-div{
     width: 50%;
     text-align: left;
 }
@@ -70,7 +70,7 @@ body{
     color: #fff;
     margin: 0 0 35px;
 }
-.wraperoflearnmore{
+.warperOfLearnMore{
     margin: 0px;
     padding: 0px;
 }
@@ -90,9 +90,9 @@ body{
     position: relative;
     padding: 120px 0 50px ;
 }
-.backgroundimg{
+.background-img{
     position: absolute;
-    background-image: url(./Image/roadmap.svg);
+    background-image: url(./Images/roadmap.svg);
     background-repeat: no-repeat;
     background-size: contain;
     max-width: 390px;
@@ -102,13 +102,13 @@ body{
     top: 60px;
     z-index: -1;
 }
-.maincontext{
+.main-context{
     font-size: 54px;
     line-height: 63px;
     color:#fff;
     margin: 0 0 15px;
 }
-.headingRM{
+.heading-roadmap{
     font-family: NexaBold;
     font-size: 48px;
     font-weight: normal;
@@ -116,7 +116,7 @@ body{
     letter-spacing: -.05em;
     color:#c6cdd9;
 }
-.textaligncentre {
+.text-align-centre {
     text-align: center;
 }
 .wrapper{
@@ -125,12 +125,12 @@ body{
     margin-left: 40px;
     margin-right: 40px;
 }
-.roadmapswiper{
+.roadmap-swiper{
     max-width: 220px;
     width: 100%;
     font-size: 18px;
 }
-.timestampdiv{
+.time-stamp-div{
     color: white;
     width: 100%;
     margin-bottom: 20px;
@@ -140,7 +140,7 @@ body{
 .date{
     font-size:100%;
 }
-.statuswrapper{
+.status-wrapper{
     padding: 10px 5px;
     position: relative;
 }
@@ -149,7 +149,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.statuswrapper::before {
+.status-wrapper::before {
     content: "";
     border-radius: 25px ;
     position: absolute;
@@ -159,7 +159,7 @@ body{
     top: -8px;
     margin: 0 auto;
 }
-.statuswrapper .status::before{
+.status-wrapper .status::before{
     content: "";
     position: absolute;
     width: 16px;
@@ -194,15 +194,15 @@ body{
     left: 0;
     right: 0;
 }
-.roadmapdescription{
+.roadmap-description{
     font-size:18px;
     line-height: 28px;
     margin: 0 0 20px 0;
 }
-.dateresponsive{
+.date-responsive{
     visibility: hidden;
 }
-.headingresponsive{
+.heading-responsive{
     display: none;
     visibility: hidden;
 }
@@ -219,7 +219,7 @@ body{
     .photosection{
         margin: 50px 0;
     }
-    .headingresponsive{
+    .heading-responsive{
         display: block;
         font-family:NexaBold;
         font-size: 25px;
@@ -240,7 +240,7 @@ body{
         width: 100%;
         margin: 0 20px 0 0;
     }
-    .rightdiv{
+    .right-div{
         width: 50%;
         text-align: left;
     }
@@ -254,8 +254,8 @@ body{
         font-size: 12px;
     }
 
-    .backgroundimg{
-        background-image: url("./Image/roadmapresponse.svg");
+    .background-img{
+        background-image: url("./Images/roadmapresponse.svg");
         background-repeat: no-repeat;
         background-size: contain;
         max-width: 190px;
@@ -265,13 +265,13 @@ body{
         right: 20px;
         z-index: -1;
     }
-    .maindiv2{
+    .road-map-div{
         padding: 50px 0 0 0;
     }
-    .maincontext{
+    .mainContext{
         padding: 0 15px;
     }
-    .headingRM{
+    .heading-roadmap{
         font-size: 25px;
         line-height: 32px;
     }
@@ -279,10 +279,10 @@ body{
         overflow-x: scroll;
         justify-content: flex-start;
     }
-    .roadmapswiper{
+    .roadmap-swiper{
         min-width: 200px;
     }
-    .statuswrapper{
+    .status-wrapper{
         padding: 10px 5px;
         position: relative;
     }
@@ -293,7 +293,7 @@ body{
         padding: 10px;
         top: 0;
     }
-    .dateresponsive{
+    .date-responsive{
         visibility:visible ;
         max-width: 90px;
         width: 100%;
@@ -310,11 +310,11 @@ body{
         letter-spacing: normal;
         color:#fff;
     }
-    .statuswrapper::before{
+    .status-wrapper::before{
         height: 8px;
         top: 0;
     }
-    .statuswrapper .status::before {
+    .status-wrapper .status::before {
         content: "";
         position: absolute;
         width: 8px;
@@ -330,7 +330,7 @@ body{
         margin-left: 0px;
         margin-right: 0px;
     }
-    .roadmapdescription{
+    .roadmap-description{
         font-size: 14px;
         line-height: 20px;
     }

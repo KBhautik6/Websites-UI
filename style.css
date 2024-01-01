@@ -19,7 +19,7 @@ body{
     font-family: Nexa;
     overflow-x: hidden;
 }
-.photosection{
+.photo-section{
     position: relative;
     box-sizing: border-box;
     margin: 110px 0 0;
@@ -35,7 +35,7 @@ body{
     width: 100%;
     display: flex;
 }
-.leftDiv{
+.left-div{
     text-align: left;
     width: 50px;
     margin-right:200px;
@@ -45,7 +45,7 @@ body{
     max-width: 400px;
     width: 100%
 }
-.photosection  .leftdiv{
+.photo-section  .left-div{
     max-width: 400px;
     width: 100%;
 }
@@ -216,7 +216,7 @@ body{
     body{
         overflow: auto;
     }
-    .photosection{
+    .photo-section{
         margin: 50px 0;
     }
     .heading-responsive{
@@ -234,7 +234,7 @@ body{
         width: 100%;
         display: flex;    
     }
-    .leftdiv{
+    .left-div{
         text-align: left;
         max-width: 130px;
         width: 100%;

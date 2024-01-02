@@ -22,7 +22,7 @@ body{
 .photo-section{
     position: relative;
     box-sizing: border-box;
-    margin: 110px 0 0;
+    margin: 110px 0 0 0;
 }
 .maindiv{
     padding: 0px 15px;
@@ -59,7 +59,7 @@ body{
     font-weight: 700;
     line-height: 66px;
     color:#c6cdd9;
-    margin: 0 0 30px;
+    margin: 0 0 30px 0;
     letter-spacing: normal;
 }
 .description{
@@ -68,7 +68,7 @@ body{
     font-weight: 300;
     line-height: 34px;
     color: #ffffff;
-    margin: 0 0 35px;
+    margin: 0 0 35px 0;
 }
 .warperOfLearnMore{
     margin: 0px;
@@ -105,15 +105,15 @@ body{
 .main-context{
     font-size: 54px;
     line-height: 63px;
-    color:#fff;
-    margin: 0 0 15px;
+    color:#ffffff;
+    margin: 0 0 15px 0;
 }
 .heading-roadmap{
     font-family: NexaBold;
     font-size: 48px;
     font-weight: normal;
     line-height: 56px;
-    letter-spacing: -.05em;
+    letter-spacing: -0.8px;
     color:#c6cdd9;
 }
 .text-align-centre {
@@ -131,7 +131,7 @@ body{
     font-size: 18px;
 }
 .time-stamp-div{
-    color: white;
+    color: #fff;
     width: 100%;
     margin-bottom: 20px;
     flex-direction: column;
@@ -155,7 +155,7 @@ body{
     position: absolute;
     width: 109%;
     height: 20px;
-    background-color: blue;
+    background-color: #1717f7;
     top: -8px;
     margin: 0 auto;
 }
@@ -164,7 +164,7 @@ body{
     position: absolute;
     width: 16px;
     height: 16px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 25px;
     margin: 0 auto;
 }
@@ -188,7 +188,7 @@ body{
     position: absolute;
     width: 16px;
     height: 16px;
-    background-color:#fff;
+    background-color:#ffffff;
     border-radius: 25px;
     top: -35px;
     left: 0;
@@ -208,7 +208,7 @@ body{
 }
 @media screen and (min-width: 200px) and (max-width: 991px) {
     .date{
-        visibility: hidden;
+        display: none;
     }
     .heading{
         display: none;
@@ -247,7 +247,7 @@ body{
     .description{
         font-size: 12px;
         line-height: 20px;
-        margin: 0 0 15px;
+        margin: 0 0 15px 0;
     }
     .a-learnmore{
         padding: 9px 15px;
@@ -308,7 +308,7 @@ body{
         font-weight: 600;
         line-height: 14px;
         letter-spacing: normal;
-        color:#fff;
+        color:#ffffff;
     }
     .status-wrapper::before{
         height: 8px;
@@ -319,7 +319,7 @@ body{
         position: absolute;
         width: 8px;
         height: 8px;
-        background-color: #fff;
+        background-color: #ffffff;
         border-radius: 25px;
         margin: 0 ;
         border: none;

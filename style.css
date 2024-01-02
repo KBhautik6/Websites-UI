@@ -19,19 +19,25 @@ body{
     font-family: Nexa;
     overflow-x: hidden;
 }
-.photo-section{
+.maincontainer{
+    max-width: 1100px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.banner-section{
     position: relative;
     box-sizing: border-box;
-    margin: 110px 0 0 0;
+    margin: 110px 0 0;
 }
 .maindiv{
     padding: 0px 15px;
 }
-.escrowDiv{
+.container{
     max-width: 1170px;
     margin: 0 auto;
 }
-.wraping{
+.wrapping{
     width: 100%;
     display: flex;
 }
@@ -45,7 +51,7 @@ body{
     max-width: 400px;
     width: 100%
 }
-.photo-section  .left-div{
+.banner-section  .left-div{
     max-width: 400px;
     width: 100%;
 }
@@ -59,7 +65,7 @@ body{
     font-weight: 700;
     line-height: 66px;
     color:#c6cdd9;
-    margin: 0 0 30px 0;
+    margin: 0 0 30px;
     letter-spacing: normal;
 }
 .description{
@@ -67,31 +73,42 @@ body{
     font-size: 20px;
     font-weight: 300;
     line-height: 34px;
-    color: #ffffff;
-    margin: 0 0 35px 0;
+    color: #fff;
+    margin: 0 0 35px;
 }
-.warperOfLearnMore{
+.wrapperOfLearnMore{
     margin: 0px;
     padding: 0px;
 }
 
-.a-learnmore{
+.learnMoreBtn{
     background-color: #0d4df2;
     border: 1.5px solid #0d4df2;
     height: 36px;
     font-size: 14px;
     padding: 15px 30px;
-    color: #ffffff;
+    color: #fff;
     border-radius: 8px;
     text-decoration: none;
 }
 
-.roadmap{
+.roadmap {
     position: relative;
-    padding: 120px 0 50px ;
-}
-.background-img{
+    padding: 120px 0 50px;
+  }
+  
+  .main-context {
+    font-size: 54px;
+    line-height: 63px;
+    color: #fff;
+    margin: 0 0 15px;
+    position: relative; 
+  }
+  
+  .main-context::before {
+    content: "";
     position: absolute;
+    content: "";
     background-image: url(./Images/roadmap.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -101,22 +118,17 @@ body{
     left: 0;
     top: 60px;
     z-index: -1;
-}
-.main-context{
-    font-size: 54px;
-    line-height: 63px;
-    color:#ffffff;
-    margin: 0 0 15px 0;
-}
+  }
+  
 .heading-roadmap{
     font-family: NexaBold;
     font-size: 48px;
     font-weight: normal;
     line-height: 56px;
-    letter-spacing: -0.8px;
+    letter-spacing: -.05em;
     color:#c6cdd9;
 }
-.text-align-centre {
+.text-align-center {
     text-align: center;
 }
 .wrapper{
@@ -131,14 +143,14 @@ body{
     font-size: 18px;
 }
 .time-stamp-div{
-    color: #fff;
+    color: white;
     width: 100%;
     margin-bottom: 20px;
     flex-direction: column;
     
 }
 .date{
-    font-size:18px;
+    font-size:100%;
 }
 .status-wrapper{
     padding: 10px 5px;
@@ -155,7 +167,7 @@ body{
     position: absolute;
     width: 109%;
     height: 20px;
-    background-color: #1717f7;
+    background-color: blue;
     top: -8px;
     margin: 0 auto;
 }
@@ -164,7 +176,7 @@ body{
     position: absolute;
     width: 16px;
     height: 16px;
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 25px;
     margin: 0 auto;
 }
@@ -188,7 +200,7 @@ body{
     position: absolute;
     width: 16px;
     height: 16px;
-    background-color:#ffffff;
+    background-color:#fff;
     border-radius: 25px;
     top: -35px;
     left: 0;
@@ -199,29 +211,32 @@ body{
     line-height: 28px;
     margin: 0 0 20px 0;
 }
-.date-responsive{
+.date-mobile{
     visibility: hidden;
 }
-.heading-responsive{
+.heading-mobile{
     display: none;
-    visibility: hidden;
 }
 @media screen and (min-width: 200px) and (max-width: 991px) {
     .date{
-        display: none;
+        visibility: hidden;
     }
     .heading{
         display: none;
     }
     body{
-        overflow: auto;
+        overflow:scroll;
     }
-    .photo-section{
+    .banner-section{
         margin: 50px 0;
     }
-    .heading-responsive{
+    .banner-section{
+        position: relative;
+        box-sizing: border-box;
+    }
+    .heading-mobile{
         display: block;
-        font-family:NexaBold;
+        font-family: NexaBold;
         font-size: 25px;
         font-weight: 700;
         line-height: 34px;
@@ -230,15 +245,23 @@ body{
         margin: 0 0 20px;
     }
 
-    .wraping{
+    .wrapping{
         width: 100%;
         display: flex;    
+    }
+    .banner-section  .left-div{
+        max-width: 130px;
+        width: 100%;
     }
     .left-div{
         text-align: left;
         max-width: 130px;
         width: 100%;
         margin: 0 20px 0 0;
+    }
+    .image-content{
+        max-width: 200px;
+        width: 100%
     }
     .right-div{
         width: 50%;
@@ -247,14 +270,19 @@ body{
     .description{
         font-size: 12px;
         line-height: 20px;
-        margin: 0 0 15px 0;
+        margin: 0 0 15px;
     }
-    .a-learnmore{
-        padding: 9px 15px;
+    .learnMoreBtn{
+        padding: 9px 2px;
         font-size: 12px;
     }
-
-    .background-img{
+    .roadmap-div{
+        padding: 50px 0 0 0;
+    }
+    .main-context{
+        padding: 0 15px;
+    }
+    .main-context::before{
         background-image: url("./Images/roadmapresponse.svg");
         background-repeat: no-repeat;
         background-size: contain;
@@ -265,13 +293,7 @@ body{
         right: 20px;
         z-index: -1;
     }
-    .road-map-div{
-        padding: 50px 0 0 0;
-    }
-    .mainContext{
-        padding: 0 15px;
-    }
-    .heading-roadmap{
+    .heading-mobile{
         font-size: 25px;
         line-height: 32px;
     }
@@ -293,7 +315,7 @@ body{
         padding: 10px;
         top: 0;
     }
-    .date-responsive{
+    .date-mobile{
         visibility:visible ;
         max-width: 90px;
         width: 100%;
@@ -308,7 +330,7 @@ body{
         font-weight: 600;
         line-height: 14px;
         letter-spacing: normal;
-        color:#ffffff;
+        color:#fff;
     }
     .status-wrapper::before{
         height: 8px;
@@ -319,7 +341,7 @@ body{
         position: absolute;
         width: 8px;
         height: 8px;
-        background-color: #ffffff;
+        background-color: #fff;
         border-radius: 25px;
         margin: 0 ;
         border: none;

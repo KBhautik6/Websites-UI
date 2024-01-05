@@ -1,0 +1,356 @@
+@font-face {
+    font-family: NexaBlack;
+    src: url("./font/NexaBlack.otf");
+}
+@font-face {
+    font-family: NexaBold;
+    src: url("./font//NexaBold.otf");
+}
+@font-face {
+    font-family: NexaLight;
+    src: url("./font/NexaLight.otf");
+}
+@font-face {
+    font-family:Nexa;
+    src: url("./font/NexaRegular.otf");
+}
+body{
+    background-color: #0e1016;
+    font-family: Nexa;
+    overflow-x: hidden;
+}
+.main-container{
+    max-width: 1100px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.banner-section{
+    position: relative;
+    box-sizing: border-box;
+    margin: 110px 0 0;
+}
+.maindiv{
+    padding: 0px 15px;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.wrapping{
+    width: 100%;
+    display: flex;
+}
+.left-div{
+    text-align: left;
+    width: 50px;
+    margin-right:200px;
+    margin-left: 50px;
+}
+.image-content{
+    max-width: 400px;
+    width: 100%
+}
+.banner-section  .left-div{
+    max-width: 400px;
+    width: 100%;
+}
+.right-div{
+    width: 50%;
+    text-align: left;
+}
+.heading{
+    font-family: NexaBold;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 66px;
+    color:#c6cdd9;
+    margin: 0 0 30px;
+    letter-spacing: normal;
+}
+.description{
+    font-family:NexaLight;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 34px;
+    color: #fff;
+    margin: 0 0 35px;
+}
+.wrapperOfLearnMore{
+    margin: 0px;
+    padding: 0px;
+}
+
+.learnMoreBtn{
+    background-color: #0d4df2;
+    border: 1.5px solid #0d4df2;
+    height: 36px;
+    font-size: 14px;
+    padding: 15px 30px;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.roadmap-section {
+    position: relative;
+    padding: 120px 0 50px;
+  }
+  
+  .main-context {
+    font-size: 54px;
+    line-height: 63px;
+    color: #fff;
+    margin: 0 0 15px;
+    position: relative; 
+  }
+  
+  .main-context::before {
+    content: "";
+    position: absolute;
+    content: "";
+    background-image: url(./Images/roadmap.svg) no-repeat;
+    max-width: 390px;
+    width: 100%;
+    height: 390px;
+    left: 0;
+    top: 60px;
+    z-index: -1;
+  }
+  
+.heading-roadmap{
+    font-family: NexaBold;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 56px;
+    letter-spacing: -.05em;
+    color:#c6cdd9;
+}
+.text-align-center {
+    text-align: center;
+}
+.wrapper{
+    display: flex;
+    justify-content:center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.roadmap-swiper{
+    max-width: 220px;
+    width: 100%;
+    font-size: 18px;
+}
+.time-stamp-div{
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+    flex-direction: column;
+    
+}
+.date{
+    font-size:100%;
+}
+.status-wrapper{
+    padding: 10px 5px;
+    position: relative;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.status-wrapper::before {
+    content: "";
+    border-radius: 25px ;
+    position: absolute;
+    width: 109%;
+    height: 20px;
+    background-color: blue;
+    top: -8px;
+    margin: 0 auto;
+}
+.status-wrapper .status::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.status-box{
+    background: #191c26;
+    border-radius: 14px;
+    margin: 5px;
+    padding: 20px;
+    font-family: NexaLight;
+    text-align: left;
+    position: relative;
+    top: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: normal;
+    color:#bdc2cb ;
+}
+.status-box::before{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color:#fff;
+    border-radius: 25px;
+    top: -35px;
+    left: 0;
+    right: 0;
+}
+.roadmap-description{
+    font-size:18px;
+    line-height: 28px;
+    margin: 0 0 20px 0;
+}
+.date-mobile{
+    visibility: hidden;
+}
+.heading-mobile{
+    display: none;
+}
+@media screen and (min-width: 200px) and (max-width: 991px) {
+    .date{
+        visibility: hidden;
+    }
+    .heading{
+        display: none;
+    }
+    body{
+        overflow:scroll;
+    }
+    .banner-section{
+        margin: 50px 0;
+    }
+    .banner-section{
+        position: relative;
+        box-sizing: border-box;
+    }
+    .heading-mobile{
+        display: block;
+        font-family: NexaBold;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: normal;
+        color: #ffffff;
+        margin: 0 0 20px;
+    }
+
+    .wrapping{
+        width: 100%;
+        display: flex;    
+    }
+    .banner-section  .left-div{
+        max-width: 130px;
+        width: 100%;
+    }
+    .left-div{
+        text-align: left;
+        max-width: 130px;
+        width: 100%;
+        margin: 0 20px 0 0;
+    }
+    .image-content{
+        max-width: 200px;
+        width: 100%
+    }
+    .right-div{
+        width: 50%;
+        text-align: left;
+    }
+    .description{
+        font-size: 12px;
+        line-height: 20px;
+        margin: 0 0 15px;
+    }
+    .learnMoreBtn{
+        padding: 9px 2px;
+        font-size: 12px;
+    }
+    .roadmap-div{
+        padding: 50px 0 0 0;
+    }
+    .main-context{
+        padding: 0 15px;
+    }
+    .main-context::before{
+        background-image: url("./Images/roadmapresponse.svg") no-repeat contain;
+        max-width: 190px;
+        height: 190px;
+        top: 218px; 
+        left: auto;
+        right: 20px;
+        z-index: -1;
+    }
+    .heading-mobile{
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .wrapper{
+        overflow-x: scroll;
+        justify-content: flex-start;
+    }
+    .roadmap-swiper{
+        min-width: 200px;
+    }
+    .status-wrapper{
+        padding: 10px 5px;
+        position: relative;
+    }
+    .status-box{
+        text-align: left;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px;
+        top: 0;
+    }
+    .date-mobile{
+        visibility:visible ;
+        max-width: 90px;
+        width: 100%;
+        display: block;
+        background: #20e6f2;
+        padding: 8px 10px 6px;
+        margin: 0 0 15px;
+        border-radius: 30px;
+        text-align: center;
+        font-family: NexaBold;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14px;
+        letter-spacing: normal;
+        color:#fff;
+    }
+    .status-wrapper::before{
+        height: 8px;
+        top: 0;
+    }
+    .status-wrapper .status-box::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #fff;
+        border-radius: 25px;
+        margin: 0 ;
+        border: none;
+        left: 36px;
+        top: -15px;
+    }
+    .wrapper{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .roadmap-description{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+  
